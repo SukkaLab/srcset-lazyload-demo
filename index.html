@@ -23,7 +23,6 @@
         }
 
     </style>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 
 <body>
@@ -39,9 +38,11 @@
         <img class="lozad" src="original/9.jpg" srcset="thumbnail/9.jpg" data-srcset="original/9.jpg">
         <img class="lozad" src="original/10.jpg" srcset="thumbnail/10.jpg" data-srcset="original/10.jpg">
     </div>
+    <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
-        var observer = lozad();
-        observer.observe();
+        window.lazyLoadOptions = {
+            elements_selector: ".lozad",
+        };
     </script>
 </body>
 
