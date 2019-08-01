@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sukka Lab - srcset lazyload demo</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/npm/skx@0.0.1">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/npm/skx@0.0.1/favicon/favicon-32x32.png">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.1.2">
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        img {
+            height: auto;
+            width: 60%;
+            margin: 10px 20%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="lozad" src="original/1.jpg" srcset="thumbnail/1.jpg" data-srcset="original/1.jpg">
+        <img class="lozad" src="original/2.jpg" srcset="thumbnail/2.jpg" data-srcset="original/2.jpg">
+        <img class="lozad" src="original/3.jpg" srcset="thumbnail/3.jpg" data-srcset="original/3.jpg">
+        <img class="lozad" src="original/4.jpg" srcset="thumbnail/4.jpg" data-srcset="original/4.jpg">
+        <img class="lozad" src="original/5.jpg" srcset="thumbnail/5.jpg" data-srcset="original/5.jpg">
+        <img class="lozad" src="original/6.jpg" srcset="thumbnail/6.jpg" data-srcset="original/6.jpg">
+        <img class="lozad" src="original/7.jpg" srcset="thumbnail/7.jpg" data-srcset="original/7.jpg">
+        <img class="lozad" src="original/8.jpg" srcset="thumbnail/8.jpg" data-srcset="original/8.jpg">
+        <img class="lozad" src="original/9.jpg" srcset="thumbnail/9.jpg" data-srcset="original/9.jpg">
+        <img class="lozad" src="original/10.jpg" srcset="thumbnail/10.jpg" data-srcset="original/10.jpg">
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+        var observer = lozad();
+        observer.observe();
+    </script>
+</body>
+
+</html>
